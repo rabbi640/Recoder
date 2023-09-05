@@ -1,0 +1,37 @@
+//Additional Colors
+$purple-dark: #9926f0;
+$purple-light: #bb6ef5;
+$pink: #d122e3;
+
+$light-pink: rgb(238, 141, 209);
+$light-blue:rgb(148, 213, 243) ;
+$Crem:rgb(243, 228, 228);
+
+$green-0: #033a24;
+$green-1: #006a4f;
+$green-2: #0fcb83;
+$green-3: #20ee9f;
+$black-0: #010b13;
+$black-1: #333333;
+$white:white;
+
+$primary: $green-2;
+$secondary: $black-1;
+
+//Navbar
+$navbar-light-hover-color: rgba($primary, 0.8);
+
+//Accordion override;
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+//ICONS
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>  <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+
+//IMPORT BOOTSTRAP 5
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap");

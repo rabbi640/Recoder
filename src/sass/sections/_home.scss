@@ -1,0 +1,232 @@
+.home {
+  @mixin transition(
+    $property: all,
+    $duration: 0.45s,
+    $ease: cubic-bezier(0.65, 0, 0.076, 1)
+  ) {
+    transition: $property $duration $ease;
+  }
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    &.learn-more {
+      width: 12rem;
+      height: auto;
+      .circle {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: $primary;
+        border-radius: 1.625rem;
+        .icon {
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: $white;
+          &.arrow1 {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+            &::before {
+              position: absolute;
+              content: "";
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid #fff;
+              border-right: 0.125rem solid #fff;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+
+      .button-text {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0;
+        margin: 0 0 0 1.85rem;
+        color: $primary;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    &:hover {
+      .circle {
+        width: 100%;
+        .icon {
+          &.arrow1 {
+            background: $white;
+            transform: translate(1rem, 0);
+          }
+        }
+      }
+      .button-text {
+        color: $white;
+      }
+    }
+  }
+
+  @supports (display: grid) {
+    body {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0.625rem;
+      grid-template-areas: ". main main ." ". main main .";
+    }
+
+    #container {
+      grid-area: main;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  height: auto;
+
+  .img-custom {
+    @include media-breakpoint-down(md) {
+      margin-top: 4rem;
+      width: 60%;
+    }
+  }
+
+  .typed_cursor {
+    color: white;
+  }
+
+  & > div {
+    padding: 5rem 0 0 0;
+  }
+
+  background-image: linear-gradient(to bottom, $light-pink,$light-blue);
+
+  .intro {
+    @include media-breakpoint-up(md) {
+      padding-top: 5.8rem;
+    }
+    margin-left: 1rem;
+    font-family: "Poppins";
+
+    & > h1 {
+      line-height: 1.1;
+    }
+
+    &--title {
+ 
+    color: #4b2870;
+      letter-spacing: -0.5px;
+      font-weight: 700;
+      display: block;
+      font-size: 4.8rem;
+    }
+    &--quote {
+      color: white;
+      font-size: 1rem;
+      font-family: "Poppins";
+      letter-spacing: 1.5px;
+      position: relative;
+      .l-q {
+        position: relative;
+        bottom: 10px;
+        transform: rotate(180deg);
+      }
+      .r-q {
+        transform: translateY(-50%);
+      }
+    }
+    &--desc {
+      color: $primary;
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .arrow {
+    display: none;
+    font-weight: 700;
+    color: whitesmoke;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    animation: flashing 0.4s ease 0.2s infinite alternate;
+    @include media-breakpoint-up(md) {
+      display: inline;
+    }
+  }
+
+  .about-btn {
+    position: relative;
+    transition: all 0.5s;
+  }
+  .about-btn::before {
+    transition: all 0.5s;
+  }
+
+  .about-btn::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: 0px;
+  }
+  .about-btn:hover::before {
+    transform: scalex(0);
+  }
+  @include media-breakpoint-down(lg) {
+    .intro--title {
+      font-size: 3.8rem;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .intro--title {
+      font-size: 3rem;
+    }
+    .intro--desc {
+      font-size: 1.2rem;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .intro {
+      justify-content: center;
+    }
+    #container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,94 @@
+@include media-breakpoint-down(sm) {
+  .home .row {
+    margin-right: 0px;
+  }
+  .nav--img {
+    width: 100px;
+  }
+}
+.nav--img {
+  width: 200px;
+}
+.footer {
+  p {
+    color: $white;
+  }
+  h3 {
+    letter-spacing: 0.5px;
+  }
+  .company {
+    p {
+      max-width: 60%;
+      color: $white;
+    }
+  }
+  font-family: "Poppins";
+  color: $white;
+  background-image: linear-gradient(to bottom, $light-blue, $light-pink);
+  .cus-pad-max {
+    padding: 4rem 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    color: $white;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+    li:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+    li:hover,
+    a:hover {
+      color: $gray-100;
+      cursor: pointer;
+    }
+  }
+
+  .footer-img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+      brightness(102%) contrast(102%);
+  }
+  .footer-img:hover {
+    filter: invert(62%) sepia(48%) saturate(962%) hue-rotate(106deg)
+      brightness(92%) contrast(88%);
+  }
+  @include media-breakpoint-down(lg) {
+    .footer-text {
+      line-height: 15px;
+    }
+    .footer-img {
+      width: 60%;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .footer-title {
+      font-size: 0.5px;
+    }
+    .footer-img {
+      width: 70%;
+      margin-bottom: 2px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .footer .cus-pad-max {
+      padding: 2rem 0;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      line-height: 15px;
+    }
+    .footer-title {
+      font-size: 0.5px;
+    }
+    .footer ul {
+      line-height: 5px;
+    }
+  }
+}
+.footer ul {
+  line-height: 5px;
+}

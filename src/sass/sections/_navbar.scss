@@ -1,0 +1,61 @@
+.navbar {
+  font-family: poppins;
+  background-image: linear-gradient(to right, $light-pink,$light-pink);
+  padding: 0.4rem 4rem;
+  box-shadow: 0 0.2px 10px rgba($primary, 0.1);
+  .navbar-brand-custom {
+    color: $white;
+  }
+  ul {
+    li {
+      a {
+        color: $white;
+        font-family: "Poppins";
+      }
+      .btn-login {
+        &:hover {
+          color: $white;
+        }
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+      /* SIGN UP*/
+      .sign-up {
+        height: 90%;
+        color: $primary;
+        &:hover {
+          background: none;
+          color: tint-color($primary, 25%);
+        }
+        @include media-breakpoint-down(lg) {
+          margin-top: 10px;
+          padding: 5px 20px;
+          position: relative;
+          left: -10px;
+        }
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+    }
+  }
+  .home--login {
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20rem;
+  }
+  @include media-breakpoint-down(lg) {
+    .home--login {
+      position: relative;
+      transform: translateX(0);
+      width: 18rem;
+      font-size: 0.8rem;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .nav--img {
+      width: 250px;
+    }
+  }
+}

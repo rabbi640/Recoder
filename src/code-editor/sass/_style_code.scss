@@ -1,0 +1,81 @@
+.cus {
+  width: 100%;
+  height: 190%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+body {
+  background-color: black;
+}
+.grouper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body.code-editor {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+#editor,
+#output {
+  height: 100%;
+}
+.output {
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  &--title {
+    color: rgb(4, 175, 4);
+  }
+  &::first-letter {
+    font-weight: 700;
+  }
+}
+.gutter {
+  height: 5px !important;
+  background-color: #333;
+  cursor: s-resize;
+  position: relative;
+  &::after,
+  &::before {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 2px solid #ddd;
+    border-width: 0 0 3px 3px;
+    position: absolute;
+    left: 50%;
+    transform: rotate(-45deg);
+    bottom: -5px;
+  }
+  &::after {
+    transform: rotate(135deg);
+    top: -5px;
+  }
+}
+.cus-navbar {
+  display: flex;
+  z-index: 999;
+  // box-shadow: 0 2px 5px rgba($primary, 0.125);
+  border-bottom: 1px $gray-700 solid;
+  color: $primary;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 0.36rem 1.2rem;
+}
+
+.cus-offcanvas {
+  color: black;
+  a {
+    text-decoration: none;
+  }
+  max-width: 25%;
+}

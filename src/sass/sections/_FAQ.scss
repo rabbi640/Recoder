@@ -1,0 +1,41 @@
+.faq {
+  background-color: $Crem;
+
+  font-family: "Poppins";
+  padding-bottom: 5rem;
+
+  .page-heading {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 5rem;
+
+    font-weight: 600;
+    font-size: 3.2rem;
+  }
+  strong {
+    color: $primary;
+  }
+  .page-heading::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 180px;
+    background-color: $green-0;
+    position: absolute;
+    left: calc(50% - 90px);
+    bottom: 1.5px;
+  }
+  .page-heading::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 40px;
+    background-color: $green-2;
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 0px;
+  }
+}
+.accordion-header {
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.1);
+}

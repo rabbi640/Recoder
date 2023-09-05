@@ -1,0 +1,21 @@
+.btn-custom-under {
+  color: $white;
+  padding: 0.2rem 0.4rem 0.2rem 0.1rem;
+  border-bottom: 0.1rem solid $white;
+
+  font-family: "Poppins";
+  letter-spacing: 0.5px;
+
+  &:hover {
+    border-bottom: 0.1rem solid $primary;
+  }
+}
+.btn-thic {
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.5s;
+  &:hover {
+    color: $white;
+  }
+}

@@ -1,0 +1,145 @@
+.features {
+  background-color: $Crem;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  padding-bottom: 5rem;
+
+  h1 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 4.6rem;
+    // color: #4b2870;
+    color: #f6599d;
+  }
+
+  .page-heading {
+    position: relative;
+    // margin-bottom: 5rem;
+    padding-bottom: 1rem;
+  }
+  &--text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    h1 {
+      font-weight: 600;
+      font-size: 3.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    div {
+      width: 65%;
+      margin: auto;
+      .img-div {
+        margin-left: 0px;
+      }
+    }
+  }
+  .page-heading::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 180px;
+    background-color: $green-0;
+    position: absolute;
+    left: calc(50% - 90px);
+    bottom: 1.5px;
+  }
+  .page-heading::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 40px;
+    background-color: $green-2;
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 0px;
+  }
+
+  .ZTitle {
+    font-weight: 700;
+  }
+  &--text {
+    margin-bottom: 100px;
+    position: relative;
+    .num {
+      position: absolute;
+      transform: translateY(-90%);
+    }
+  }
+
+  &--img {
+    position: relative;
+    z-index: 1;
+
+    &::after,
+    &::before {
+      z-index: -1;
+      position: absolute;
+      background-color: rgba($primary, 0.4);
+      width: 40%;
+      height: 80%;
+      border-radius: 50%;
+      content: "";
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &::before {
+      z-index: -2;
+      position: absolute;
+      background-color: rgba($gray-600, 0.2);
+      width: 55%;
+      height: 100%;
+      border-radius: 50%;
+      content: "";
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .features--text h1 {
+      font-size: 2.8rem;
+    }
+    .page-heading {
+      font-size: 4.2rem;
+    }
+    .features--img {
+      width: 80%;
+    }
+    * {
+      margin: 0 auto;
+      text-align: center;
+    }
+    .features--text div .img-div {
+      margin: 0 auto;
+    }
+    .features--last {
+      margin-bottom: 7rem;
+    }
+    .features--text {
+      position: relative;
+    }
+    .features--text p::after {
+      content: "";
+      position: absolute;
+      background-color: #333;
+      opacity: 0.1;
+      height: 1px;
+      width: 300px;
+      bottom: 70px;
+      left: calc(50% - 150px);
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .features--text h1 {
+      font-size: 1.8rem;
+    }
+    .page-heading {
+      font-size: 3.6rem;
+    }
+  }
+}
