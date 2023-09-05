@@ -6,6 +6,17 @@
   .navbar-brand-custom {
     color: $white;
   }
+
+  .btn{
+    background-color: #4e286d;
+    color: white;
+    border-radius: 5px;
+  }
+  .btn:hover{
+    
+    color: $light-blue;
+    
+  }
   ul {
     li {
       a {
@@ -14,7 +25,7 @@
       }
       .btn-login {
         &:hover {
-          color: $white;
+          color: $light-blue;
         }
         @include media-breakpoint-down(md) {
           display: none;
@@ -22,11 +33,12 @@
       }
       /* SIGN UP*/
       .sign-up {
+        background: #4e286d;
+        border-radius: 5px;
         height: 90%;
-        color: $primary;
+        color: $white;
         &:hover {
-          background: none;
-          color: tint-color($primary, 25%);
+          color:$light-blue;
         }
         @include media-breakpoint-down(lg) {
           margin-top: 10px;
