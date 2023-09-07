@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="Assext 2.png"/>
     <title>Recoder</title>
   </head>
+
   <body style="background-color: rgb(248, 242, 242)">
     <div class="fluid-container">
       <nav class="navbar navbar-expand-lg bg-light navbar-custom">
@@ -42,77 +44,180 @@
                 <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#FAQ">FAQ</a>
+                <a class="nav-link" href="#">Language </a>
               </li>
+              
+      
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ </a>
+            </li>
 
-              <li class="nav-item ms-6">
-                <div class="dropdown">
-                  <button
-                    type="button"
-                    class="btn"
-                    data-bs-toggle="pop-up"
-                    aria-expanded="false"
-                    data-bs-auto-close="outside"
-                  >
-                    Log In
-                  </button>
+            <li>
+                <!-- Button trigger modal -->
+            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Sign Up
+            </button>
 
-                  <form
-                    action="login"
-                    class="home--login dropdown-menu p-3 dropdown-menu-end dropdown-menu-lg-start"
-                  >
-                    <div class="mb-3">
-                      <label for="uname" class="form-label"
-                        >Email address</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="uname"
-                        placeholder="email@example.com"
-                        name="uname"
-                      />
-                    </div>
-                    <div>
-                      <label for="password" class="form-label">Password</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="password"
-                        placeholder="Password"
-                        name="password"
-                      />
-                    </div>
-                    <div class="mb-4">
-                      <div class="form-check">
-                        <input
-                          type="checkbox"
-                          class="form-check-input"
-                          id="dropdownCheck2"
-                        />
-                        <label class="form-check-label" for="dropdownCheck2">
-                          Remember me
-                        </label>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                      Sign in
-                    </button>
-                  </form>
+            <!-- Modal -->
+              <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                
+              <div class="modal-dialog">
+                      <!-- from -->
+                      <div class="modal-content bg-dark ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+<form class="">
+
+                      <div class="container cona ">
+                
+                  
+                        <h1 class="form-title">Registration</h1>
+                        <h2 style="color: white; font-size: medium;">Upload your picture</h2>
+                        <div class="upload">
+                          <button type = "button" class = "btn-warning">
+                            <i class = "fa fa-upload"></i> Upload File
+                            <input type="file">
+                          </button>
+                        </div>
+                          <div class="main-user-info">
+                            <div class="user-input-box">
+                              <label for="fullName">Full Name</label>
+                              <input type="text"
+                                      id="fullName"
+                                      name="fullName"
+                                      placeholder="Enter Full Name"/>
+                            </div>
+                            <div class="user-input-box">
+                              <label for="username">Username</label>
+                              <input type="text"
+                                      id="username"
+                                      name="username"
+                                      placeholder="Enter Username"/>
+                            </div>
+                            <div class="user-input-box">
+                              <label for="email">Email</label>
+                              <input type="email"
+                                      id="email"
+                                      name="email"
+                                      placeholder="Enter Email"/>
+                            </div>
+                            <div class="user-input-box">
+                              <label for="phoneNumber">Phone Number</label>
+                              <input type="text"
+                                      id="phoneNumber"
+                                      name="phoneNumber"
+                                      placeholder="Enter Phone Number"/>
+                            </div>
+                            <div class="user-input-box">
+                              <label for="password">Password</label>
+                              <input type="password"
+                                      id="password"
+                                      name="password"
+                                      placeholder="Enter Password"/>
+                            </div>
+                            <div class="user-input-box">
+                              <label for="confirmPassword">Confirm Password</label>
+                              <input type="password"
+                                      id="confirmPassword"
+                                      name="confirmPassword"
+                                      placeholder="Confirm Password"/>
+                            </div>
+                          </div>
+                          <div class="gender-details-box">
+                            <span class="gender-title">Gender</span>
+                            <div class="gender-category">
+                              <input type="radio" name="gender" id="male">
+                              <label for="male">Male</label>
+                              <input type="radio" name="gender" id="female">
+                              <label for="female">Female</label>
+                            </div>
+                          </div>
+                          <div class="form-submit-btn">
+                            <input type="submit" value="Register">
+                          </div>
+                          <div>  <a class="" href="#"><img style="width:50px; height: 50px; margin-top: 5% ;" src="imgs/media.png" alt="google mail"></a></div>
+                        
+</form>
+                  </div>
+                  </div>
                 </div>
-              </li>
+              </div>
+            </div>
+          </li>
 
-              <li class="nav-item ms-2">
-                <button
-                  type="button"
-                  class="sign-up nav-link btn "
-                >
-                  Sign Up
-                </button>
-                <!-- <a class="sign-up nav-link btn btn-outline-primary" href="#"
-                  >Sign up</a
-                > -->
-              </li>
+
+          <!-- log in -->
+          
+      <div class="ms-1">
+                <!-- Button trigger modal -->
+<button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#loginModalToggle">
+Log In
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModalToggle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="logi-box">
+      <img src="imgs/avatar.png" class="avatar">
+      <h1 class="hea">Login Here</h1>
+              <form>
+              <p>Username | Email ID</p>
+              <input type="text" name="Email" placeholder="Enter Username">
+              <p>Password</p>
+              <input type="password" name="password" placeholder="Enter Password">
+              <input type="submit" name="submit" value="Login">
+              <a data-bs-toggle="modal" href="#forgetModalToggle" >Forget Password</a>
+              |
+              <a class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Registration</a>
+
+    </div>
+  </div>
+</div>
+</div>
+
+              <div class="modal fade" id="forgetModalToggle" aria-hidden="true" aria-labelledby="forgetModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="logi-box">
+                      <img src="imgs/avatar.png" class="avatar">
+                      <h1 class="hea">Forget Account</h1>                    
+                
+                      <input type="text" name="Email" placeholder="Enter Username/Email">
+                      <button class="btn " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Submit</button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="logi-box">
+                      <img src="imgs/avatar.png" class="avatar">
+                      <h1 class="hea">Confimation</h1>
+                      <input type="text" name="code" placeholder="Enter Varification Code">
+                      <button class="btn" data-bs-target="#ModalToggle" data-bs-toggle="modal">Confirm</button>
+                    </div>
+                    </div>
+             
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+
+ </div>
+
+              
+<!-- forget form -->
+              
+
+
+
+
+
+
             </ul>
           </div>
         </div>
@@ -121,12 +226,21 @@
       <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-- Start Home Section ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
 
       <section class="home" id="home">
-        <div class="container">
+        <div class="containe">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4 mt-2">
+              <div class="text-center">
+                <img
+                  src="./imgs/coding3.svg"
+                  alt="Coding "
+                  class="img-custom img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-8">
               <div class="intro">
                 <h1 class="mb-5">
-                  <span class="intro--title">Your Fav Online Code Editor!</span>
+                  <span class="intro--title">Your Online Free Code Editor</span>
                   <span class="intro--quote">
                     <img
                       class="l-q"
@@ -156,15 +270,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mt-2">
-              <div class="text-center">
-                <img
-                  src="./imgs/coding3.svg"
-                  alt="Coding "
-                  class="img-custom img-fluid"
-                />
-              </div>
-            </div>
+       
           </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -298,7 +404,7 @@
           </div>
         </div>
       </section>
-
+<!-- FAQ Section -->
       <section class="faq" id="faq">
         <div class="container">
           <h1 class="page-heading text-center">FAQ</h1>
@@ -310,7 +416,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="collapseOne"
                   style="font-weight: 500"
                 >
@@ -417,6 +523,7 @@
         </div>
       </section>
 
+      
       <section class="footer" id="footer">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -428,36 +535,36 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-2">
-              <img
+              <!-- <img
                 width="40%"
                 src="./imgs/js-svgrepo-com.svg"
                 alt="number one"
                 class="footer-img img-fluid"
-              />
+              /> -->
             </div>
             <div class="col-2">
-              <img
+              <!-- <img
                 width="40%"
                 src="./imgs/java-svgrepo-com.svg"
                 alt="number one"
                 class="footer-img img-fluid"
-              />
+              /> -->
             </div>
             <div class="col-2">
-              <img
+              <!-- <img
                 width="40%"
                 src="./imgs/c-logo-svgrepo-com.svg"
                 alt="number one"
                 class="footer-img img-fluid"
-              />
+              /> -->
             </div>
             <div class="col-2">
-              <img
+              <!-- <img
                 width="40%"
                 src="./imgs/py-svgrepo-com.svg"
                 alt="number one"
                 class="footer-img img-fluid"
-              />
+              /> -->
             </div>
           </div>
           <div class="container cus-pad-max"></div>
@@ -512,5 +619,7 @@
     </div>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script type="module" src="/main.js"></script>
+   
+    
   </body>
 </html>

@@ -7,10 +7,22 @@
     color: $white;
   }
 
+
+  .btn-close{
+    background-color: red;
+  }
+  .btn-submit{
+    background: green;
+  }
+
+
+
   .btn{
     background-color: #4e286d;
     color: white;
     border-radius: 5px;
+    // height: 100%;
+    margin: 5px;
   }
   .btn:hover{
     
@@ -35,7 +47,7 @@
       .sign-up {
         background: #4e286d;
         border-radius: 5px;
-        height: 90%;
+        
         color: $white;
         &:hover {
           color:$light-blue;
@@ -70,4 +82,237 @@
       width: 250px;
     }
   }
+}
+
+// login page
+.logi-box{
+  font-family: sans-serif;
+  width: 320px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.hea{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.logi-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.logi-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.logi-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.logi-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1c8adb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.logi-box input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: $pinkish;
+  color: #000;
+}
+
+.logi-box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+.logi-box a:hover
+{
+  color: $light-blue;
+}
+
+// regform
+.cona{
+  width: 100%;
+  max-width: 650px;
+  background: rgba(0, 0, 0, 0.017);
+  padding: 28px;
+  margin: 0 ;
+  border-radius: 10px;
+  font-family: sans-serif;
+  
+
+}
+
+.form-title{
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: solid 1px white;
+}
+
+.main-user-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+  justify-content: end;
+}
+
+.user-input-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.user-input-box label{
+  width: 95%;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input-box input{
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+
+.gender-title{
+  color:white;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+
+.gender-category{
+  margin: 15px 0;
+  color: white;
+}
+
+.gender-category label{
+  padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+  cursor: pointer;
+}
+
+.form-submit-btn{
+  margin-top: 40px;
+}
+
+.form-submit-btn input{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border:none;
+  border-radius: 3px;
+  color: rgb(209, 209, 209);
+  background: #4e286d;;
+}
+
+.form-submit-btn input:hover{
+  background: $pinkish;
+  color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px){
+  .container{
+      min-width: 280px;
+  }
+
+  .user-input-box{
+      margin-bottom: 12px;
+      width: 100%;
+  }
+
+  .user-input-box:nth-child(2n){
+      justify-content: space-between;
+  }
+
+  .gender-category{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .main-user-info{
+      max-height: 380px;
+      overflow: auto;
+  }
+
+  .main-user-info::-webkit-scrollbar{
+      width: 0;
+  }
+}
+
+// upload
+
+.btn-warning{
+  position: relative;
+  padding: 11px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color:#4e286d;;
+  border: 0;
+  transition: 0.2s;
+  overflow: hidden; 
+}
+
+.btn-warning input[type = "file"]{
+  cursor: pointer;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: scale(3);
+  opacity: 0;
+}
+
+.btn-warning:hover{
+  background-color:$pinkish;
 }

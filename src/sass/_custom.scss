@@ -7,6 +7,9 @@ $light-pink: rgb(238, 141, 209);
 $light-blue:rgb(148, 213, 243) ;
 $Crem:rgb(243, 228, 228);
 $blue:rgb(20, 20, 228);
+$magenda:#4e286d;
+$pinkish:#fd5c9a;
+
 
 $green-0: #033a24;
 $green-1: #006a4f;
@@ -20,13 +23,13 @@ $primary: $green-2;
 $secondary: $black-1;
 
 //Navbar
-$navbar-light-hover-color: rgba($primary, 0.8);
+$navbar-light-hover-color: rgba($magenda, 0.8);
 
 //Accordion override;
 $accordion-padding-y: 1.5rem;
 $accordion-padding-x: 1.5rem;
-$accordion-icon-color: $primary;
-$accordion-icon-active-color: $secondary;
+$accordion-icon-color: $magenda;
+$accordion-icon-active-color: $pink;
 //ICONS
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>  <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");

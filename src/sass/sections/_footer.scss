@@ -52,8 +52,8 @@
       brightness(102%) contrast(102%);
   }
   .footer-img:hover {
-    filter: invert(62%) sepia(48%) saturate(962%) hue-rotate(106deg)
-      brightness(92%) contrast(88%);
+    filter:invert(62%) sepia(48%) saturate(962%) hue-rotate(106deg) brightness(92%) contrast(88%);
+
   }
   @include media-breakpoint-down(lg) {
     .footer-text {

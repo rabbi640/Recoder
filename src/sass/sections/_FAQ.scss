@@ -8,19 +8,20 @@
     position: relative;
     padding-bottom: 1rem;
     margin-bottom: 5rem;
+    color: $pinkish;
 
-    font-weight: 600;
-    font-size: 3.2rem;
+    font-weight: 700;
+    font-size: 4.6rem;
   }
   strong {
-    color: $primary;
+    color: $magenda;
   }
   .page-heading::before {
     content: "";
     display: block;
     height: 2px;
     width: 180px;
-    background-color: $green-0;
+    background-color: $pink;
     position: absolute;
     left: calc(50% - 90px);
     bottom: 1.5px;
@@ -30,7 +31,7 @@
     display: block;
     height: 5px;
     width: 40px;
-    background-color: $green-2;
+    background-color: $magenda;
     position: absolute;
     left: calc(50% - 20px);
     bottom: 0px;
