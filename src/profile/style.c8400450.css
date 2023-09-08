@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(#f38ecc ,#9dcbec);
+  color:#4E286E;
+  font-family: "Poppins";
+}
+.hover-btn:hover {
+  opacity: 1;
+}
+.hover-btn {
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+
+#option-dots {
+  transition: 0.4s;
+}
+
+#option-dots:hover {
+  cursor: pointer;
+  color: #81c2a9;
+}
+a {
+  text-decoration: none;
+}
