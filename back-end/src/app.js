@@ -10,7 +10,7 @@ app.use(express.json())
 app.get('/', (req, res) => {
   res.status(httpStatus.OK).json({
     ok: true,
-    message: 'Server running successfully.'
+    message: 'Server running successfully.',
   })
 })
 
