@@ -6,13 +6,17 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "format:check": "prettier --check .",
-    "format:write": "prettier --write .",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:check": "eslint --ignore-path .eslintignore --ext .js .",
+    "lint:fix": "eslint . --fix",
+    "format:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
+    "format:fix": "prettier --write .",
+    "prepare": "cd .. && husky install back-end/.husky"
   },
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "src/**/*.js": "npm run lint:check && npm run format:check"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -25,6 +29,8 @@
   "devDependencies": {
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.3"
   }
