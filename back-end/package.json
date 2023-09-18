@@ -10,12 +10,13 @@
     "lint:fix": "eslint . --fix",
     "format:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
     "format:fix": "prettier --write .",
+    "lint-format-check": "npm run lint:check && npm run format:check",
     "prepare": "cd .. && husky install back-end/.husky"
   },
   "author": "",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.js": "npm run lint:check && npm run format:check"
+    "src/**/*.js": "npm run lint-format-check"
   },
   "dependencies": {
     "cors": "^2.8.5",
