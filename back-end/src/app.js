@@ -16,6 +16,19 @@ app.get('/', (req, res) => {
   })
 })
 
+app.all('*', (req, res) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    ok: false,
+    message: 'Not found',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'API route not found',
+      },
+    ],
+  })
+})
+
 app.use(globalErrorHandler)
 
 module.exports = app
