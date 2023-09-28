@@ -3,11 +3,14 @@ const express = require('express')
 const httpStatus = require('http-status')
 
 const globalErrorHandler = require('./middlewares/globalErrorHandler')
+const routesV1 = require('./routes/v1')
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+app.use('/api/v1', routesV1)
 
 app.get('/', (req, res) => {
   res.status(httpStatus.OK).json({
