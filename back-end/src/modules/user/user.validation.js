@@ -10,5 +10,9 @@ exports.UserValidationSchema = z.object({
     .nonempty()
     .regex(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/),
   profileImageUrl: z.string().trim().nonempty().url(),
-  gender: z.enum(['male' | 'female']),
+  gender: z.enum(['male', 'female']),
+})
+
+exports.CreateUserSchema = z.object({
+  body: this.UserValidationSchema,
 })
